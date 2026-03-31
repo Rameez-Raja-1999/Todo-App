@@ -20,14 +20,28 @@
     height: 600px;
     width: 600px;
     /* background-color: rgba(red, green, blue, alpha);  making for transparent background*/
-    background-color: #ffffff;
-    box-shadow: 0 0 6px #ffffff;
+    /* background-color: #ffffff; */
+    /* background: rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 0 4px #ffffff;
     padding: 40px 30px 40px;
     border-radius: 10px;
+
+
+
+  background: rgba(255, 255, 255, 0.2); /* transparent white */
+  backdrop-filter: blur(40px);          /* blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* safari support */
+  
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  padding: 20px;
+  color: white;
 }
 
 .container .to-do-app h2{
-    color: #000000;
+    /* color: #000000; */
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +60,8 @@
     background-color: #c0b8b8;
     border-radius: 30px;
     box-shadow: 0 0 6px #c0b8b8;
+    height: 45px;
+    line-height: 45px;
     /* padding: 10px; */
 }
 
@@ -54,9 +70,9 @@
     outline: none;
     border: none;
     background: transparent;
-    padding: 10px;
-    /* align-items: center; */
+    padding: 10px 10px 10px 20px;
 }
+
 
 .input-box button{
     background-color: #ff5945;
@@ -76,9 +92,25 @@
 }
 
 .container .list-items li{
+     color: #ffffff;
     list-style: none;
     font-size: 17;
-    padding: 5px;
+    padding-top: 7px;
+    padding-left: 29px;
     user-select: none;
     cursor: pointer;
+    position: relative;
 }
+
+.container .list-items ul li::before{
+    content: "";
+    background: url("./assets/unchecked.png");
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+
+}   
