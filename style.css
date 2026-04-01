@@ -11,33 +11,23 @@
     min-height: 100vh;
     width: 100%;
     background:linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .to-do-app{
-    height: 600px;
-    width: 600px;
-    /* background-color: #ffffff; */
-    /* background: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    max-width: 600px;
     box-shadow: 0 0 4px #ffffff;
     padding: 40px 30px 40px;
     border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.2); /* transparent white */
-    backdrop-filter: blur(40px);          /* blur effect */
-   -webkit-backdrop-filter: blur(10px);  /* safari support */
-  
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  
-    padding: 20px;
     color: white;
+    background-color: transparent;
 }
 
 .container .to-do-app h2{
-    /* color: #000000; */
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -59,7 +49,6 @@
     box-shadow: 0 0 6px #c0b8b8;
     height: 45px;
     line-height: 45px;
-    /* padding: 10px; */
 }
 
 .input-box input{
@@ -68,6 +57,7 @@
     border: none;
     background: transparent;
     padding: 10px 10px 10px 20px;
+    font-weight: 14px;
 }
 
 
@@ -80,8 +70,8 @@
     border-radius: 40px;
     font-size: 16px;
     font-weight: 600;
-    box-shadow: 0 0 6px #ff5945;
-     cursor: pointer;
+    box-shadow: 0 0 6px #f18275;
+    cursor: pointer;
 }
 
 .container .list-items{
@@ -89,7 +79,7 @@
 }
 
 .container .list-items li{
-     color: #ffffff;
+    /* color: #ffffff; */
     list-style: none;
     font-size: 17;
     padding-top: 7px;
@@ -99,9 +89,10 @@
     position: relative;
 }
 
+/* Default unchecked */
 .container .list-items ul li::before{
     content: "";
-    background: url("./assets/unchecked.png");
+    background-image: url("./assets/unchecked.png");
     height: 15px;
     width: 15px;
     background-size: cover;
@@ -109,5 +100,9 @@
     position: absolute;
     top: 12px;
     left: 8px;
+}
 
-}   
+/* Checked */
+ul li.checked::before{
+    background-image: url("./assets/checked.png");
+}
