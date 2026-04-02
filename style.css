@@ -118,11 +118,11 @@
     left: 2px;
 }
 
-.container .list-items ul li{
+/* .container .list-items ul li{
     color: #555;
     text-decoration: line-through;
     margin-left: 3px;
-}
+} */
 
 .container .list-items ul li::before {
     background-image: url(./assets/check.jpg);
