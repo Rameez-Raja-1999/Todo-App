@@ -20,11 +20,12 @@
 .to-do-app {
     width: 100%;
     max-width: 600px;
-    box-shadow: 0 0 3px cyan;
+    box-shadow: 0 0 3px rgba(31, 224, 208, 0.425);
     padding: 40px 30px 40px;
     border-radius: 10px;
     color: white;
     background-color: transparent;
+    /* background-color: #fff; */
 }
 
 .container .to-do-app h2{
@@ -91,11 +92,11 @@
     cursor: pointer;
 }
 
- ul li{
+ ul li {
     list-style: none;
     font-size: 17;
     padding-top: 17px;
-    padding-left: 29px;
+    padding-left: 33px;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -120,8 +121,16 @@
 .container .list-items ul li{
     color: #555;
     text-decoration: line-through;
+    margin-left: 3px;
 }
 
-.container .list-items ul li::before{
-    background-image: url("./assets/check.png");
+.container .list-items ul li::before {
+    background-image: url(./assets/check.jpg);
+    border-radius: 100%;
+    border: 1px solid blue;
+    outline: none;
+    padding: 0px;
+    box-shadow: 0 0 6px cyan;
+    margin-top: 0px;
+    margin-left: 3px;
 }
