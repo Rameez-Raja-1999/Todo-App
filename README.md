@@ -1,5 +1,5 @@
 #Output of the Code:-
 
 
-![Output](assests/output1.png)
+![Output](assets/output.png)
 ![Output](assests/output2.png)
