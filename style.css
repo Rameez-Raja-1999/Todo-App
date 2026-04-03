@@ -133,7 +133,8 @@ ul li span {
 }
 
 ul li span:hover{
-    background-color: #4a37b3;
-    box-shadow: 0px 0px 6px #c6b4fa;
+    background-color: #94939c;
+    box-shadow: 0px 0px 6px #bbb4fa;
     transition: all 0.7s ease-in ;
+    transform: scale(0.5);
 }
