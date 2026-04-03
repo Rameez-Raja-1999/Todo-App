@@ -105,7 +105,7 @@
     left: 2px;
 }
 
-.container .list-items ul li{
+.container .list-items ul li.unchecked{
     color: #555;
     text-decoration: line-through;
     margin-left: 3px;

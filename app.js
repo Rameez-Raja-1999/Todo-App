@@ -15,3 +15,14 @@ function addTask(){
 
     inputBox.value="";
 }
+
+listContainer.addEventListener("click", (e)=>{
+    if (e.target.tagName === "LI"){
+        e.target.classList.toggle("unhecked");
+    }
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+
+    }
+
+}, false)
