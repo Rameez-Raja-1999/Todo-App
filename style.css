@@ -118,11 +118,11 @@
     left: 2px;
 }
 
-/* .container .list-items ul li{
+.container .list-items ul li{
     color: #555;
     text-decoration: line-through;
     margin-left: 3px;
-} */
+}
 
 .container .list-items ul li::before {
     background-image: url(./assets/check.jpg);
@@ -133,4 +133,20 @@
     box-shadow: 0 0 6px cyan;
     margin-top: 0px;
     margin-left: 3px;
+}
+
+ul li span {
+    position: absolute;
+    right: 0px;
+    height: 25px;
+    width: 25px;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: #4a37b3;
+    box-shadow: 0px 0px 6px #c6b4fa;
+    transition: all 0.7s ease-in ;
 }
