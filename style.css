@@ -138,3 +138,67 @@ ul li span:hover{
     transition: all 0.7s ease-in ;
     transform: scale(0.5);
 }
+
+@media (max-width: 430px){
+
+    .to-do-app{
+        padding: 25px 15px;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .container{
+        padding: 5px;
+    }
+
+    .container .to-do-app h2{
+        font-size: 18px;
+        gap: 6px;
+    }
+
+    .container .to-do-app img{
+        height: 22px;
+    }
+
+    /* input box */
+    .input-box{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 10px;
+        line-height: normal;
+    }
+
+    .input-box input{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input-box button{
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    /* list items */
+    ul li{
+        font-size: 14px;
+        padding-top: 14px;
+        padding-left: 30px;
+    }
+
+    .container .list-items ul li::before{
+        height: 14px;
+        width: 14px;
+        top: 18px;
+        left: 2px;
+    }
+
+    /* delete button */
+    ul li span{
+        height: 22px;
+        width: 22px;
+        font-size: 14px;
+    }
+
+}
