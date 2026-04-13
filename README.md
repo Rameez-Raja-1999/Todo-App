@@ -1,4 +1,4 @@
-##Output of the Code:-
+##Output
 
 
 ![Output](assets/output.png)
