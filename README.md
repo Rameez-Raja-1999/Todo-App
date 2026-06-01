@@ -1,5 +1,5 @@
 # Todo-App
-Simple To-Do App using HTML, CSS, JavaScript
+Simple To-Do App using HTML5, CSS, JavaScript
 
 
 
